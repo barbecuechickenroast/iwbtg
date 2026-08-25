@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="HandheldFriendly" content="true" />
-    <title>I WANNA BE THE GUY: THE GAME: THE MOVIE</title>
+    <title>I WANNA BE THE GUY</title>
 </head>
 
 <body>
@@ -28,6 +28,12 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="main.js"></script>
+	<script>
+        window.addEventListener('beforeunload', (event) => {
+            event.preventDefault();
+            event.returnValue = '';
+        });
+	</script>
 </body>
 
 </html>
